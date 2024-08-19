@@ -33,7 +33,13 @@ class Mobil {
     }
 }
 
-$ObjekBMW = new Mobil(); // ini adalah objek BMW dari class mobil
-$ObjekTesla = new Mobil(); // ini adalah objek Tesla dari class mobil
-$ObjekAudi = new Mobil(); // ini adalah objek Audi dari class mobil
+$BMW = new Mobil(); // ini adalah objek BMW dari class mobil
+$Tesla = new Mobil(); // ini adalah objek Tesla dari class mobil
+$Audi = new Mobil(); // ini adalah objek Audi dari class mobil
+
+echo "Status Harga BMW : " .$BMW->statusHarga(). "\n";
+echo "<br>";
+echo "Status Harga Tesla : " .$Tesla->statusHarga(). "\n";
+echo "<br>";
+echo "Status Harga Audi : " .$Audi->statusHarga(). "\n";
 ?>
