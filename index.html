@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Beranda</title>
+</head>
+
+<body>
+    <h1 style="color: blue; font-size: 24px;">
+        Selamat Datang di Halaman Beranda
+    </h1>
+
+    <style type="text/css">
+        @import url(style.css);
+    </style>
+
+    <a href="about.html">About</a>
+
+    <button id="pindah" onclick="openGuestBook()">Buka Buku Tamu</button>
+
+    <h2>Daftar Buku Tamu</h2>
+    <table id="guestbookTable" border="1">
+        <tr>
+            <td>Nama</td>
+            <td>Email</td>
+            <td>Pesan_mereka</td>
+        </tr>
+    </table>
+
+    <script type="text/javascript">
+        function openGuestBook() {
+
+            var Nama = prompt("Isi Nama Anda", "");
+            var Email = prompt("Isi Alamat Email", "");
+            var Pesan_mereka = prompt("Tuliskan Pesan Anda", "");
+
+            console.log("Nama: " + Nama);
+            console.log("Email: " + Email);
+            console.log("Pesan: " + Pesan_mereka);
+
+            alert("Terima kasih, " + Nama + "! Pesan Anda telah kami terima.");
+
+            var table = document.getElementById("guestbookTable");
+            var row = table.insertRow();
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+
+            cell1.innerHTML = Nama;
+            cell2.innerHTML = Email;
+            cell3.innerHTML = Pesan_mereka;
+
+        }
+    </script>
+</body>
+
+</html>

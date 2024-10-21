@@ -1,0 +1,9 @@
+body {
+    background-color: gray;
+    font: Arial;
+}
+
+p {
+    padding: 10px;
+    color: black;
+}
